@@ -1,0 +1,62 @@
+[
+  {
+    "name": "fazendo algo",
+    "context": {
+      "trace_id": "0x340877f99b792619c46adfdc40fb9020",
+      "span_id": "0x437ca5a47ea8c596",
+      "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x0ab8a619e278fb96",
+    "start_time": "2024-11-11T18:31:32.050977Z",
+    "end_time": "2024-11-11T18:31:32.050986Z",
+    "status": {
+      "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [],
+    "links": [],
+    "resource": {
+      "attributes": {
+        "telemetry.sdk.language": "python",
+        "telemetry.sdk.name": "opentelemetry",
+        "telemetry.sdk.version": "1.28.1",
+        "service.name": "meu-servico-123"
+      },
+      "schema_url": ""
+    }
+  },
+  {
+    "name": "main",
+    "context": {
+      "trace_id": "0x340877f99b792619c46adfdc40fb9020",
+      "span_id": "0x0ab8a619e278fb96",
+      "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2024-11-11T18:31:32.050934Z",
+    "end_time": "2024-11-11T18:31:32.050997Z",
+    "status": {
+      "status_code": "UNSET"
+    },
+    "attributes": {},
+    "events": [
+      {
+        "name": "Um evento qualquer",
+        "timestamp": "2024-11-11T18:31:32.050947Z",
+        "attributes": {}
+      }
+    ],
+    "links": [],
+    "resource": {
+      "attributes": {
+        "telemetry.sdk.language": "python",
+        "telemetry.sdk.name": "opentelemetry",
+        "telemetry.sdk.version": "1.28.1",
+        "service.name": "meu-servico-123"
+      },
+      "schema_url": ""
+    }
+  }
+]
