@@ -1,0 +1,9 @@
+services:
+    olgtm:
+        image: grafana/otel-lgtm:latest
+        container_name: otel-lgtm
+        ports:
+         - 3000:3000 # Grafana (admin, admin)
+         - 4317:4317 # Collector gRPC
+         - 4318:4318 # Collector HTTP
+         - 9090:9090 # Prometheus
