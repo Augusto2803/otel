@@ -1,0 +1,71 @@
+{
+  "resource_metrics": [
+    {
+      "resource": {
+        "attributes": {
+          "service.name": "otel-metricas",
+          "service.version": "0.1.0"
+        },
+        "schema_url": ""
+      },
+      "scope_metrics": [
+        {
+          "scope": {
+            "name": "meter",
+            "version": "",
+            "schema_url": "",
+            "attributes": null
+          },
+          "metrics": [
+            {
+              "name": "carros.passando",
+              "description": "Carros passando na rua",
+              "unit": "1",
+              "data": {
+                "data_points": [
+                  {
+                    "attributes": {
+                      "modelo": "Fusca",
+                      "cor": "azul",
+                      "ano": "1970"
+                    },
+                    "start_time_unix_nano": 1731341601495586935,
+                    "time_unix_nano": 1731341601495665571,
+                    "value": 1,
+                    "exemplars": []
+                  },
+                  {
+                    "attributes": {
+                      "modelo": "Jeep Willys",
+                      "cor": "vermelho",
+                      "ano": "1971"
+                    },
+                    "start_time_unix_nano": 1731341601495603753,
+                    "time_unix_nano": 1731341601495665571,
+                    "value": 1,
+                    "exemplars": []
+                  },
+                  {
+                    "attributes": {
+                      "modelo": "Honda Civic",
+                      "cor": "preto",
+                      "ano": "1972"
+                    },
+                    "start_time_unix_nano": 1731341601495612716,
+                    "time_unix_nano": 1731341601495665571,
+                    "value": 1,
+                    "exemplars": []
+                  }
+                ],
+                "aggregation_temporality": 2,
+                "is_monotonic": true
+              }
+            }
+          ],
+          "schema_url": ""
+        }
+      ],
+      "schema_url": ""
+    }
+  ]
+}
