@@ -1,7 +1,7 @@
 services:
-    # metricas:
+    # metrics:
     #     image: grafana/otel-lgtm:latest
-    #     container_name: otel-lgtm
+    #     container_name: otel-metrics
     #     ports:
     #         - 3000:3000 # Grafana (admin, admin)
     #         - 4317:4317 # Collector gRPC
@@ -9,9 +9,18 @@ services:
     #         - 9090:9090 # Prometheus
 
 
-    tracing:
-        image: jaegertracing/all-in-one:latest
-        container_name: jaeger
+    # tracing:
+    #     image: jaegertracing/all-in-one:latest
+    #     container_name: otel-tracing
+    #     ports:
+    #         - 16686:16686 # Jaeger UI
+    #         - 4317:4317 # Collector gRPC
+
+
+    logging:
+        image: grafana/otel-lgtm:latest
+        container_name: otel-logging
         ports:
-            - 16686:16686 # Jaeger UI
+            - 3000:3000 # Grafana (admin, admin)
             - 4317:4317 # Collector gRPC
+            - 4318:4318 # Collector HTTP
